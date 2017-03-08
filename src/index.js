@@ -1,7 +1,8 @@
 // import libraries
-import React from 'react';
-import ReactDOM from 'react-dom';
-import { Router, Route, Link, IndexRoute, browserHistory } from 'react-router';
+import React, { Component } from 'react';
+import { render } from 'react-dom';
+import { Router, Route, IndexRoute } from 'react-router';
+import { Provider } from 'react-redux';
 
 // import custom components
 import App from './components/App';
@@ -11,17 +12,22 @@ import BookDetail from './components/BookDetails';
 // import page styles
 import './styles/styles.css';
 
+import store, { history } from './store';
+
 function redirectToHome() {
   window.location.href = '/';
 }
-const router = (
-  <Router history={browserHistory}>
-    <Route path="/" component={App}>
-      <IndexRoute component={Home} />
-      <Route path="/books/:bookid" component={BookDetail} />
-      <Route path="*" onEnter={redirectToHome} />
-    </Route>
-  </Router>
+
+const main = (
+  <Provider store={store}>
+    <Router history={history}>
+      <Route path="/" component={App}>
+        <IndexRoute component={Home} />
+        <Route path="/books/:bookid" component={BookDetail} />
+        <Route path="*" onEnter={redirectToHome} />
+      </Route>
+    </Router>
+  </Provider>
 );
 
-ReactDOM.render(router, document.getElementById('root'));
+render(main, document.getElementById('root'));
