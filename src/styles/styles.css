@@ -1,0 +1,32 @@
+.header {
+  background-image: url('../../app/assets/header_bg.jpg');
+  background-size: cover;
+}
+.store-sign {
+  margin: 20px;
+  padding:10px;
+  color: white;
+}
+
+.store-sign h1 {
+  margin-bottom: -10px;
+}
+
+.store-sign p {
+  margin-left: 20px;
+}
+
+.nav-bar {
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.nav-bar a {
+  display: inline-block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  margin-left: 20px;
+  text-decoration: none;
+  padding: 5px;
+  font-size: 20px;
+}
