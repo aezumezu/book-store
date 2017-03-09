@@ -23,7 +23,7 @@ const main = (
     <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={Home} />
-        <Route path="/books/:bookid" component={BookDetail} />
+        <Route path="/books/:bookId" component={BookDetail} />
         <Route path="*" onEnter={redirectToHome} />
       </Route>
     </Router>

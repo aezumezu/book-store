@@ -12,7 +12,6 @@ const Book = (props) => <div className="book-select">
     <span>{props.title}</span>
   </Link>
   <span className="text">{props.datePublished}
-    {console.log('rarints', `${(props.rating/5) * 100}%`)}
     <div className="star-ratings-css">
       <div className="star-ratings-css-top"
         style={{width:`${(props.rating/5) * 100}%`}}>
