@@ -1,11 +1,22 @@
 import React from 'react';
+import { connect } from 'react-redux';
+import Book from './Book';
 
 class Home extends React.Component {
   render() {
-    return(
-      <div></div>
+    const books = this.props.books;
+    return (
+      <div className="display-area">
+        {books.map(book => <Book {...book} />)}
+      </div>
     );
   }
 };
 
-export default Home;
+function mapStateToProps(state) {
+  return {
+    books: state.books
+  };
+}
+
+export default connect(mapStateToProps)(Home);

@@ -3,7 +3,7 @@ import React from 'react';
 class BookDetails extends React.Component {
   render() {
     return(
-      <div></div>
+      <div>A Book's' Details</div>
     );
   }
 };
