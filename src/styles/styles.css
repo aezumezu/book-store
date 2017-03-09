@@ -60,6 +60,7 @@ a {
 }
 
 .star-ratings-css {
+  display: inline-block;
   unicode-bidi: bidi-override;
   color: #c5c5c5;
   font-size: 25px;
@@ -86,3 +87,30 @@ a {
   z-index: 0;
 }
 
+.book-detail {
+  display: flex;
+  justify-content: space-between;
+}
+
+.book-detail img {
+  width: 300px;
+}
+
+.book-info {
+  margin-left: 10px;
+}
+
+.book-name,
+.book-author,
+.book-date
+{
+  display: block;
+}
+
+.book-name {
+  font-size: 25px;
+}
+
+.book-author {
+  font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
