@@ -3,9 +3,9 @@ module.exports = [
   id: 'eTyBMlOcQE',
   title: 'Fifty Shades of Grey',
   author: 'E. L. James',
-  rating: '4',
+  rating: '4.0',
   datePublished: 'April 3, 2012',
-  thumbnail: ''
+  thumbnail: '50shadesgrey.jpg'
   },
   {
   id: 'HYunVPpfdU',
@@ -13,7 +13,7 @@ module.exports = [
   author: 'Suzanne Collins',
   rating: '4.5',
   datePublished: 'July 3, 2010',
-  thumbnail: ''
+  thumbnail: 'hunger_games1.jpg'
   },
   {
   id: 'LaWhwSSQMu',
@@ -21,7 +21,7 @@ module.exports = [
   author: 'Suzanne Collins',
   rating: '4.2',
   datePublished: 'September 1, 2009',
-  thumbnail: ''
+  thumbnail: 'hunger_games2.jpg'
   },
   {
   id: 'pnonGEOjhb',
@@ -29,7 +29,7 @@ module.exports = [
   author: 'Suzanne Collins',
   rating: '4.6',
   datePublished: 'February 25, 2014',
-  thumbnail: ''
+  thumbnail: 'hunger_games3.jpg'
   },
   {
   id: 'YkrtRXFSbU',
@@ -37,7 +37,7 @@ module.exports = [
   author: 'E. L. James',
   rating: '4.7',
   datePublished: 'April 17, 2012',
-  thumbnail: ''
+  thumbnail: '50shades_darker.jpg'
   },
   {
   id: 'umpSkTSpiG',
@@ -45,7 +45,7 @@ module.exports = [
   author: 'Gillian Flynn',
   rating: '4.0',
   datePublished: 'April 22, 2014',
-  thumbnail: ''
+  thumbnail: 'gone_girl.jpg'
   },
   {
   id: 'DNqiwHfFrn',
@@ -53,7 +53,7 @@ module.exports = [
   author: 'John Green',
   rating: '4.5',
   datePublished: 'April 8, 2014',
-  thumbnail: ''
+  thumbnail: 'fault_stars.jpg'
   },
   {
   id: 'rvfoIkysUA',
@@ -61,7 +61,7 @@ module.exports = [
   author: 'Walter Isaacson ',
   rating: '4.5',
   datePublished: 'September 15, 2015',
-  thumbnail: ''
+  thumbnail: 'steve_jobs.jpg'
   },
   {
   id: 'UiwKIjdyHR',
@@ -69,7 +69,7 @@ module.exports = [
   author: 'Jim Collins',
   rating: '4.2',
   datePublished: 'October 16, 2001',
-  thumbnail: ''
+  thumbnail: 'good_to_great.jpg'
   },
   {
   id: 'OQjjzMYWsD',
@@ -77,7 +77,7 @@ module.exports = [
   author: 'Laura Hillenbrand',
   rating: '5.0',
   datePublished: 'July 29, 2014',
-  thumbnail: ''
+  thumbnail: 'unbroken.jpg'
   },
   {
   id: 'RlpIFeNpom',
@@ -85,7 +85,7 @@ module.exports = [
   author: 'Veronica Roth',
   rating: '4.5',
   datePublished: 'September 30, 2014',
-  thumbnail: ''
+  thumbnail: 'divergent.jpg'
   },
   {
   id: 'uUBwlIHGoZ',
@@ -93,7 +93,7 @@ module.exports = [
   author: 'Stephenie Meyer',
   rating: '4.4',
   datePublished: 'August 15, 2011',
-  thumbnail: ''
+  thumbnail: 'twilight1.jpg'
   },
   {
   id: 'SMXBKqecRM',
@@ -101,7 +101,7 @@ module.exports = [
   author: 'Veronica Roth',
   rating: '4.3',
   datePublished: 'January 20, 2015',
-  thumbnail: ''
+  thumbnail: 'insurgent.jpg'
   },
   {
   id: 'hSOnyRIASY',
@@ -109,7 +109,7 @@ module.exports = [
   author: 'Veronica Roth',
   rating: '3.5',
   datePublished: 'January 19, 2016',
-  thumbnail: ''
+  thumbnail: 'allegiant.jpg'
   },
   {
   id: 'ykpEHMlgAI',
@@ -117,7 +117,7 @@ module.exports = [
   author: 'Scott Westerfeld',
   rating: '4.5',
   datePublished: 'May 3, 2011',
-  thumbnail: ''
+  thumbnail: 'uglies.jpg'
   },
   {
   id: 'UlbLYPEERM',
@@ -125,7 +125,7 @@ module.exports = [
   author: 'Rick Yancey ',
   rating: '4.3',
   datePublished: 'February 10, 2015',
-  thumbnail: ''
+  thumbnail: '5th_wave.jpg'
   },
   {
   id: 'tGwVgHTFxE',
@@ -133,7 +133,7 @@ module.exports = [
   author: 'Alexandra Bracken',
   rating: '4.0',
   datePublished: 'December 6, 2016',
-  thumbnail: ''
+  thumbnail: 'passenger.jpg'
   },
   {
   id: 'nWZdCubZub',
@@ -141,7 +141,7 @@ module.exports = [
   author: 'James Dashner',
   rating: '4.2',
   datePublished: 'September 13, 2011',
-  thumbnail: ''
+  thumbnail: 'scotch_trials.jpg'
   },
   {
   id: 'KaBmDSegqp',
@@ -149,7 +149,7 @@ module.exports = [
   author: 'James Dashner',
   rating: '4.3',
   datePublished: 'September 27, 2016',
-  thumbnail: ''
+  thumbnail: 'fever_code5.jpg'
   },
   {
   id: 'VCgeXCpepO',
@@ -157,6 +157,6 @@ module.exports = [
   author: 'James Dashner',
   rating: '4.0',
   datePublished: 'January 7, 2014',
-  thumbnail: ''
+  thumbnail: 'kill_order4.jpg'
   }
 ]
