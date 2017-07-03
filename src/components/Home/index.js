@@ -13,17 +13,14 @@ class Home extends React.Component {
       books: [],
     };
   }
+
   componentDidMount() {
     this.props.fetchBooks();
   }
 
   componentWillReceiveProps(nextProps) {
-    const oldBooks = this.props.books;
     const books = nextProps.books;
-
-    if (!_.isEqual(books, oldBooks)) {
-      this.setState({ books });
-    }
+    this.setState({ books });
   }
 
   displayBooks() {

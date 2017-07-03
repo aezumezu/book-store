@@ -8,7 +8,7 @@ import 'font-awesome/css/font-awesome.min.css';
 // import custom components
 import App from './components/App';
 import Home from './components/Home';
-import BookDetail from './components/BookDetails';
+import BookDetails from './components/BookDetails';
 
 // import page styles
 import './styles/styles.css';
@@ -24,7 +24,7 @@ const main = (
     <Router history={history}>
       <Route path="/" component={App}>
         <IndexRoute component={Home} />
-        <Route path="/books/:bookId" component={BookDetail} />
+        <Route path="/books/:bookId" component={BookDetails} />
         <Route path="*" onEnter={redirectToHome} />
       </Route>
     </Router>
