@@ -1,3 +1,3 @@
 module.exports = {
-  apiUrl: 'https://anselm-api-staging.herokuapp.com',
-};
+  apiUrl: process.env.API_URL || 'https://anselm-api-staging.herokuapp.com',
+}
