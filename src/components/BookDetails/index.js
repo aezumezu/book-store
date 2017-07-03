@@ -19,12 +19,8 @@ class BookDetails extends React.Component {
   }
 
   componentWillReceiveProps(nextProps) {
-    const oldDetails = this.props.bookDetails;
     const bookDetails = nextProps.bookDetails;
-
-    if (!_.isEqual(oldDetails, bookDetails)) {
-      this.setState({ bookDetails });
-    }
+    this.setState({ bookDetails });
   }
 
   renderBookDetails() {
