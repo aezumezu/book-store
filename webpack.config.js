@@ -1,6 +1,8 @@
-require('webpack');
+require('dotenv').config({ silent: true });
+const webpack = require('webpack');
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const env = require('./src/config/config');
 
 const BUILD_DIR = path.resolve(__dirname, 'build/');
 const APP_DIR = path.resolve(__dirname, 'src/');
@@ -47,6 +49,10 @@ const config = {
     new HtmlWebpackPlugin({
       template: path.resolve(__dirname, 'src/index.html'),
       filename: 'index.html',
+    }),
+    new webpack.DefinePlugin({
+      NODE_ENV: JSON.stringify(process.env.NODE_ENV),
+      'process.env.API_URL': JSON.stringify(env.apiUrl),
     }),
   ],
   devServer: {
