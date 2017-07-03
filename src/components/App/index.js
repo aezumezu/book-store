@@ -1,5 +1,4 @@
 import React from 'react';
-
 import Nav from './nav';
 
 class App extends React.Component {
@@ -19,6 +18,10 @@ class App extends React.Component {
       </div>
     );
   }
+}
+
+App.propTypes = {
+  children: React.PropTypes.object,
 };
 
 export default App;

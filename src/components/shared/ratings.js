@@ -1,8 +1,10 @@
 import React from 'react';
 
 const Rating = (props) => <div className="star-ratings-css">
-  <div className="star-ratings-css-top"
-    style={{ width: `${(props.rating / 5) * 100}%` }}>
+  <div
+    className="star-ratings-css-top"
+    style={{ width: `${(props.rating / 5) * 100}%` }}
+  >
     <span>★</span>
     <span>★</span>
     <span>★</span>
@@ -17,5 +19,9 @@ const Rating = (props) => <div className="star-ratings-css">
     <span>★</span>
   </div>
 </div>;
+
+Rating.propTypes = {
+  rating: React.PropTypes.number.isRequired,
+};
 
 export default Rating;

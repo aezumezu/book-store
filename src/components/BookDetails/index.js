@@ -1,29 +1,77 @@
 import React from 'react';
 import { connect } from 'react-redux';
+import { bindActionCreators } from 'redux';
 import BookView from './BookView';
+import LoadingIcon from '../shared/LoadingIcon';
+import { fetchBookDetails } from '../../actions';
 
 class BookDetails extends React.Component {
-  getBookInfo() {
-    const bookId = this.props.params.bookId;
-    const description = this.props.bookDetails[bookId].description;
-    const info = this.props.books.filter(book => bookId === book.id);
-    return Object.assign({}, ...info, { description });
+  constructor() {
+    super();
+    this.state = {
+      bookDetails: {},
+    };
+  }
+
+  componentDidMount() {
+    const id = this.props.id;
+    this.props.fetchBookDetails(id);
+  }
+
+  componentWillReceiveProps(nextProps) {
+    const oldDetails = this.props.bookDetails;
+    const bookDetails = nextProps.bookDetails;
+
+    if (!_.isEqual(oldDetails, bookDetails)) {
+      this.setState({ bookDetails });
+    }
+  }
+
+  renderBookDetails() {
+    const isFetching = this.props.isFetching;
+    const book = this.state.bookDetails;
+    if (isFetching) {
+      return <LoadingIcon />;
+    }
+    if (Object.keys(book).length < 1) {
+      return <div>
+        Book Not Found
+      </div>;
+    }
+    return (
+      <div className="display-area">
+        <BookView bookInfo={book} />
+      </div>
+    );
   }
 
   render() {
     return (
-      <div className="display-area">
-        <BookView bookInfo={this.getBookInfo()} />
+      <div>
+        {this.renderBookDetails()}
       </div>
     );
   }
 };
 
-function mapStateToProps(state) {
+BookDetails.propTypes = {
+  id: React.PropTypes.string.isRequired,
+  bookDetails: React.PropTypes.object.isRequired,
+  fetchBookDetails: React.PropTypes.func.isRequired,
+  isFetching: React.PropTypes.bool.isRequired,
+}
+
+function mapStateToProps(state, ownParam) {
   return {
-    bookDetails: state.bookDetails,
-    books: state.books
+    id: ownParam.routeParams.bookId,
+    bookDetails: state.bookDetails.data,
+    isFetching: state.bookDetails.isFetching
   }
 }
 
-export default connect(mapStateToProps)(BookDetails);
+function mapDispatchToProps(dispatch) {
+  return bindActionCreators({
+    fetchBookDetails,
+  }, dispatch)
+}
+export default connect(mapStateToProps, mapDispatchToProps)(BookDetails);

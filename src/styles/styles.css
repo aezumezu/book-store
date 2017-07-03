@@ -1,5 +1,5 @@
 .header {
-  background-image: url('../../app/assets/header_bg.jpg');
+  background-image: url('../images/header_bg.jpg');
   background-size: cover;
 }
 .store-sign {
@@ -85,6 +85,7 @@ a {
   padding: 0;
   display: block;
   z-index: 0;
+  color: #eee;
 }
 
 .book-detail {

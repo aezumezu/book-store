@@ -1,8 +1,9 @@
 // import libraries
-import React, { Component } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
 import { Router, Route, IndexRoute } from 'react-router';
 import { Provider } from 'react-redux';
+import 'font-awesome/css/font-awesome.min.css';
 
 // import custom components
 import App from './components/App';
