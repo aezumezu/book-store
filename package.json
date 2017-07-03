@@ -36,9 +36,10 @@
     "webpack-dev-server": "^2.4.1"
   },
   "scripts": {
-    "dev": "NODE_ENV=development webpack-dev-server --inline -p --progress",
+    "dev": "npm run build -- --watch & npm run serve",
     "build": "webpack -p",
-    "start": "npm run build && pushstate-server build"
+    "start": "npm run build && npm run serve",
+    "serve": "pushstate-server build"
   },
   "repository": {
     "type": "git",

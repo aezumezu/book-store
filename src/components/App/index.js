@@ -10,6 +10,8 @@ class App extends React.Component {
             <h1>Sync BookStore</h1>
             <p><em>...learning abounds.</em></p>
           </div>
+            <div className="page-author">
+            </div>
           <Nav />
         </div>
         <div>

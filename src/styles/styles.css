@@ -6,6 +6,7 @@
   margin: 20px;
   padding:10px;
   color: white;
+  display: inline-block;
 }
 
 .store-sign h1 {
@@ -114,4 +115,16 @@ a {
 
 .book-author {
   font-family: Cambria, Cochin, Georgia, Times, Times New Roman, serif;
+}
+
+.page-author {
+  width: 150px;
+  height: 150px;
+  display: inline-block;
+  background-image: url('../images/author.jpg');
+  background-size: contain;
+  border-radius: 50%;
+  float: right;
+  margin-top: 10px;
+  margin-right: 50px;
 }
