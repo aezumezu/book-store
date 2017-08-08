@@ -7,7 +7,7 @@ class App extends React.Component {
       <div className="app-body">
         <div className="header">
           <div className="store-sign">
-            <h1>Sync BookStore</h1>
+            <h1>Sync BookStore (Crowdbotics)</h1>
             <p><em>...learning abounds.</em></p>
           </div>
             <div className="page-author">
